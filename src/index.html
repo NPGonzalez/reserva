@@ -4,11 +4,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Reserva tu asiento</title>
 </head>
 
 <body>
+    <div class="movie-container">
+        <label>Selecciona una película</label>
+        <select id="movie">
+            <option value="10">Alicia en el País de las Maravilas</option>
+            <option value="12">Casablanaca</option>
+            <option value="8">Romeo y Julieta</option>
+            <option value="9">Tarzán</option>
+        </select>
+    </div>
 
+    <ul class="showcase">
+        <li class="seat">
+            <small>N/A</small>
+        </li>
+        <li class="seat selected">
+            <small>Selected</small>
+        </li>
+        <li class="seat occupied">
+            <small>Occupied</small>
+        </li>
+    </ul>
+
+    <div class="container">
+        <div class="screen"> </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occuppied"></div>
+            <div class="seat"></div>
+        </div>
+    </div>
+
+
+    <p class="text">Tú has seleccionado
+        <span id="count">0</span> asientos por un valor de
+        <span id="total">0</span>
+    </p>
+
+
+
+    <script src="index.js"></script>
 </body>
 
 </html>
