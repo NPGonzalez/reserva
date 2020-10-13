@@ -49,11 +49,11 @@ h2 {
 }
 
 .seat.selected {
-    background-color: forestgreen;
+    background-color: rgb(44, 243, 44);
 }
 
 .seat.occupied {
-    background-color: greenyellow;
+    background-color: rgb(255, 47, 47);
 }
 
 .seat:nth-of-type(2) {
