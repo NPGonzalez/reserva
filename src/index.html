@@ -10,23 +10,32 @@
 
 <body>
     <div class="movie-container">
-        <label>Selecciona una película</label>
-        <select id="movie">
-            <option value="10">Alicia en el País de las Maravilas</option>
-            <option value="12">Casablanaca</option>
-            <option value="8">Romeo y Julieta</option>
-            <option value="9">Tarzán</option>
-        </select>
+        <div>
+            <h2>Selecciona una película</h2>
+        </div>
+
+        <div>
+            <select id="movie">
+                <option value="10">Alicia en el País de las Maravilas</option>
+                <option value="12">Casablanaca</option>
+                <option value="8">Romeo y Julieta</option>
+                <option value="9">Tarzán</option>
+            </select>
+        </div>
+
     </div>
 
     <ul class="showcase">
-        <li class="seat">
+        <div class="seat"></div>
+        <li>
             <small>N/A</small>
         </li>
-        <li class="seat selected">
+        <div class="seat selected"></div>
+        <li>
             <small>Selected</small>
         </li>
-        <li class="seat occupied">
+        <div class="seat occupied"></div>
+        <li>
             <small>Occupied</small>
         </li>
     </ul>
@@ -97,8 +106,8 @@
 
 
     <p class="text">Tú has seleccionado
-        <span id="count">0</span> asientos por un valor de
-        <span id="total">0</span>
+        <span id="count">0</span> asientos por un total de
+        <span id="total">$0</span>
     </p>
 
 
