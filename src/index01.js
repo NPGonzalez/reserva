@@ -37,7 +37,7 @@ const dataLoadUI = () => {
 
 
 
-const updateSelectedCount = (ticketPrice) => {
+const updateSelectedCount = () => {
     const selectedSeats = document.querySelectorAll('.row .seat.selected');
     const seatsIndex = [...selectedSeats].map(e => [...seats].indexOf(e));
 
@@ -56,12 +56,10 @@ const updateSelectedCount = (ticketPrice) => {
 
 movieSelect.addEventListener('change', (e) => {
     ticketPrice = e.target.value;
-    updateSelectedCount(ticketPrice);
-
     // selectedSeatsCount = 1;
     console.log(ticketPrice);
     setMovieData(e.target.selectedIndex, e.target.value);
-
+    // updateSelectedCount();
 
 });
 
@@ -72,8 +70,8 @@ container.addEventListener('click', (e) => {
         !e.target.classList.contains('occupied')) {
         // console.log(e.target);
         e.target.classList.toggle('selected');
-        updateSelectedCount(ticketPrice);
+        updateSelectedCount();
     }
 });
 
-updateSelectedCount(ticketPrice);
+updateSelectedCount();
