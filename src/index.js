@@ -5,7 +5,7 @@ const count = document.getElementById('count');
 const total = document.getElementById('total');
 const movieSelect = document.getElementById('movie');
 
-
+let selectedSeats = [];
 let ticketPrice = movieSelect.value;
 
 const setMovieData = (movieIndex, moviePrice) => {
