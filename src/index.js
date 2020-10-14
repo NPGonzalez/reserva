@@ -32,7 +32,7 @@ const dataLoadUI = () => {
     console.log(selectedSeats);
 };
 
-// dataLoadUI();
+dataLoadUI();
 
 
 
@@ -48,6 +48,7 @@ const updateSelectedCount = (ticketPrice) => {
 
     count.innerText = selectedSeatsCount;
     total.innerText = selectedSeatsCount * ticketPrice;
+
 
     console.log(selectedSeatsCount);
 }
